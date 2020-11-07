@@ -1,0 +1,132 @@
+* {box-sizing: border-box;}
+body, html {width:100%;
+            height:100%;
+            padding:0;
+            margin:0}
+.container {width:100%;
+            height:100%;
+            padding:0;
+            margin:0;
+            font-family: "Seravek", sans-serif;}
+header {width:100%;
+        height:auto;
+        color:white;
+        background-image: url(../assets/header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display:flex}
+.title {width:50%;
+        height:auto;
+        margin:30px 0 20px 30px;
+        padding-left:20px;}
+.title-image-wrapper {width:50%;
+                      height:auto}
+.piggy-wrapper {width:300px;
+                height:300px;
+                }
+.piggy-wrapper img {width:100%;
+                    height:auto}
+header button {color:black;
+               padding:10px 20px;
+               background-color: white;
+               border-radius: 10px;
+               border:transparent;}
+.content {width:100%;
+         height:auto}
+nav {width:100%;
+     height:auto;
+      display:flex;
+      justify-content: center;
+      margin-top:20px;}
+nav a {text-decoration: none;
+       color:black;   
+       margin:0 10px;
+       padding:10px 20px;}
+.selected {background-color: #f8d9e0; 
+           border: transparent;
+           border-radius: 10px;}
+.coats-wrapper {width:100%;
+                height:auto;
+                margin-top:20px}
+.coats-gallery-wrapper {width:100%;
+                        height:auto;
+                        display:flex;
+                        justify-content: center;}
+div [class*="product"] {width:150px;
+                        height:350px;
+                         margin-right:20px;}
+div [class*="product"] img {width:100%;
+                           height:auto;}
+.product-details {display:flex;
+                  justify-content: space-between;}
+.product-details p:last-child {color:#828282}
+.categories-wrapper {width:100%;
+                     height:auto;
+                     }
+.categories-wrapper h3 {padding-left:20px;
+                        margin-left:5%;
+                        color:#333333}
+.categories {width:100%;
+             height:auto;
+              display:flex;
+              justify-content: space-around;
+             margin-top:10px}
+.categories a {text-decoration: none;
+              color:black;
+              padding:20px 50px;
+              background-color: #e7e8e9;
+              margin-right:20px;
+              border-radius: 10px;
+              color:#333333}
+.overlay {width:100%;
+            height:100%;
+            position: fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            background: rgba(0, 0, 0, .6);
+            display:none}
+.overlay-content-wrapper {width:100%;
+                        height:100%;
+                        display:flex;
+                         flex-direction: column;
+                        align-items: center;
+                        position: relative;}
+.img-wrapper {width:250px;
+            height:300px;
+            background:#fff;
+            background-repeat: repeat;
+            background-size:contain;
+             margin-top:30px;
+             }
+/*nu inteleg aici de ce imi ia asa mic width-ul*/
+.overlay-product {width:100%;
+                 height:100%;
+                 background-color: white;
+                 border-radius: 10px;
+                 padding:20px;
+                 }
+.close-button {width:40px;
+                height:40px;
+               position: absolute;
+               top:5px;
+               right:5px;}
+.close-button img {width:100%;
+                   height:auto}
+.size-wrapper a{text-decoration: none;
+                color:#828282;
+                border:1px solid #3333;
+                }
+.product-options {width:100%;}
+.product-options a{text-decoration: none;
+                   color:black;
+                   padding:10px 20px;
+                   }
+.product-options a:first-child {background-color:#f8d9e0}
+.details-wrapper {width:100%;}
+
+
+
+
