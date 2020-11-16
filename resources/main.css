@@ -46,23 +46,30 @@ nav a {text-decoration: none;
 .selected {background-color: #f8d9e0; 
            border: transparent;
            border-radius: 10px;}
-.coats-wrapper {width:100%;
+.items-wrapper {width:100%;
                 height:auto;
-                margin-top:20px}
-.coats-gallery-wrapper {width:100%;
-                        height:auto;
-                        display:flex;
-                        justify-content: center;}
-div [class*="product"] {width:150px;
-                        height:350px;
-                         margin-right:20px;}
-div [class*="product"] img {width:100%;
-                           height:auto;}
+                margin-top:20px;
+                display: flex;
+                justify-content:space-around;}
+
+.gallery-item         
+ { width:200px;
+height:300px;
+ margin-right:20px;
+}
+.image-wrapper {background-image: url(../assets/coat-1.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position: top;
+                width:100%;
+                height:80%;
+                }
 .product-details {display:flex;
                   justify-content: space-between;}
 .product-details p:last-child {color:#828282}
 .categories-wrapper {width:100%;
                      height:auto;
+                     margin-top:40px;
                      }
 .categories-wrapper h3 {padding-left:20px;
                         margin-left:5%;
@@ -71,7 +78,8 @@ div [class*="product"] img {width:100%;
              height:auto;
               display:flex;
               justify-content: space-around;
-             margin-top:10px}
+             margin-top:10px;
+             margin-bottom: 40px;}
 .categories a {text-decoration: none;
               color:black;
               padding:20px 50px;
@@ -87,27 +95,35 @@ div [class*="product"] img {width:100%;
             bottom:0;
             left:0;
             background: rgba(0, 0, 0, .6);
-            display:none}
+            display:none;}
 .overlay-content-wrapper {width:100%;
                         height:100%;
                         display:flex;
                          flex-direction: column;
                         align-items: center;
-                        position: relative;}
-.img-wrapper {width:250px;
-            height:300px;
-            background:#fff;
-            background-repeat: repeat;
-            background-size:contain;
-             margin-top:30px;
-             }
+                        position: relative;
+                        padding:20px;
+                        }
+.cart-wrapper { 
+width: 400px;
+height: 700px;
+background-image: url(../assets/coats/coat-4.jpg);
+background-size: 50%;
+background-repeat: repeat;
+position: relative;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+color: #333333;
+}
+
 /*nu inteleg aici de ce imi ia asa mic width-ul*/
 .overlay-product {width:100%;
-                 height:100%;
+                 height:75%;
                  background-color: white;
                  border-radius: 10px;
                  padding:20px;
-                 }
+                 position: absolute;
+                 bottom: 0;}
 .close-button {width:40px;
                 height:40px;
                position: absolute;
@@ -115,17 +131,41 @@ div [class*="product"] img {width:100%;
                right:5px;}
 .close-button img {width:100%;
                    height:auto}
-.size-wrapper a{text-decoration: none;
+.size-wrapper input{width:7%;
                 color:#828282;
                 border:1px solid #3333;
                 }
-.product-options {width:100%;}
+.product-options {width:100%;
+                  margin-top:10px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;}
 .product-options a{text-decoration: none;
                    color:black;
                    padding:10px 20px;
-                   }
-.product-options a:first-child {background-color:#f8d9e0}
+                   border-radius: 10px;
+                   background-color: #e7e8e9;}
+.product-options a:first-child {background-color:#f8d9e0;
+                               }
 .details-wrapper {width:100%;}
+.composition-country {display:flex;
+                      justify-content: space-between;}
+.composition-wrapper,
+.country-wrapper {
+display:flex;
+flex-direction: column;
+}
+.composition-wrapper .composition,
+.country-wrapper .country {color:#828282}
+.care-wrapper .care {color:#828282}
+footer {display:flex;
+        justify-content: center;}
+footer button {color:White;
+               width:100%;
+               background-color:#333333;
+               border-radius: 10px;
+               border:transparent;
+               padding:10px 20px}
 
 
 

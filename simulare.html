@@ -32,37 +32,34 @@
                     <a href="#">Jersey</a>
                     <a href="#">Pants</a>
                 </nav>
-                <div class="coats-wrapper">
-                    <div class="coats-gallery-wrapper">
-                        <div data-img="coat-1.jpg" class="gallery-item product1">
-                            <img src="assets/coat-1.jpg">
+                <div class="items-wrapper">
+                    
+                       <!----<div data-img="coat-1.jpg" class="gallery-item product1">
+                            <div class="image-wrapper"></div>
                             <div class="product-details">
                                 <p>Top Coat</p>
                                 <p>$105</p>
                             </div>
                         </div>
-                        <div data-img="coat-2.jpg" class="gallery-item product2">
-                            <img src="assets/coat-2.jpg">
-                            <div class="product-details">
-                                <p>Winter Coat</p>
-                                <p>$90</p>
-                            </div>
-                        </div>
+                         -->
+                </div>
                         <div class="overlay">
                             <div class="overlay-content-wrapper">
                                 <div class="close-button">
                                     <img src="assets/close.png">
                                 </div>
-                                <div class="img-wrapper"></div>
+                            <section class="cart-wrapper">
                                 <div class="overlay-product">
-                                    <h3>Top Coat</h3>
-                                    <h4>$60</h4>
+                                    <h3 class="name">Top Coat</h3>
+                                    <h4 class="price">$60</h4>
                                     <p>Your Size</p>
                                     <div class="size-wrapper">
-                                        <a href="#">S</a>
-                                        <a href="#">M</a>
-                                        <a href="#">L</a>
-                                        <a href="#">XL</a>
+                                        <form>
+                                            <input type="text" value="S" id="size">
+                                            <input type="text" value="M" id="size">
+                                            <input type="text" value="L" id="size">
+                                            <input type="text" value="XL" id="size">
+                                        </form>
                                     </div>
                                     <div class="product-options">
                                         <a href="#">Details</a>
@@ -71,26 +68,28 @@
                                     </div>
                                     <div class="details-wrapper">
                                         <div class="composition-country">
-                                            <div class="composition">
+                                            <div class="composition-wrapper">
                                                 <p>Composition</p>
-                                                <p>100% polyester</p>
+                                                <div class="composition">100% polyester</div>
                                             </div>
-                                            <div class="country">
+                                            <div class="country-wrapper">
                                                 <p>Country</p>
-                                                <p>Poland</p>
+                                                <div class="country">Poland</div>
                                             </div>
                                         </div>
                                         <div class="care-wrapper">
-                                            <p>Follow the care label on your coat when you cleaning and treat any stains promptly by blotting</p>
+                                            <p>Care</p>
+                                            <div class="care">Follow the care label on your coat when you cleaning and treat any stains promptly by blotting</div>
                                         </div>
                                         <footer>
                                             <button type="submit">Add to Cart</button>
                                         </footer>
                                     </div>
                                 </div>
+                            </section>
                             </div>
                         </div>
-                    </div>
+                    
                     <div class="categories-wrapper">
                         <h3>Categories</h3>
                         <div class="categories">
@@ -100,7 +99,7 @@
                             <a href="#">New Collection</a>
                         </div>
                     </div>
-                </div>
+                
             </div>
         </div>
         <script src="resources/index.js"></script>
